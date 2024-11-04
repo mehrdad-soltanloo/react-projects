@@ -1,0 +1,184 @@
+:root {
+  /* Gray Color */
+  --gray-color-950: #030712;
+  --gray-color-900: #111827;
+  --gray-color-800: #1f2937;
+  --gray-color-700: #374151;
+  --gray-color-600: #4b5563;
+  --gray-color-500: #6b7280;
+  --gray-color-400: #9ca3af;
+  --gray-color-300: #d1d5db;
+  --gray-color-200: #e5e7eb;
+  --gray-color-100: #f3f4f6;
+  --gray-color-50: #f9fafb;
+
+  --red-color-500: #ef4444;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #ccc;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 600px;
+  margin: auto;
+  background: #030712;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 2.4rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+  border: 1px solid var(--gray-color-700);
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: left;
+}
+.btn-container {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid var(--gray-color-800);
+}
+.btn {
+  flex: 1; /* Equal width for all buttons */
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-transform: capitalize;
+
+  letter-spacing: 1px;
+  background-color: var(--gray-color-800); /* Default button color */
+  color: #fff;
+  border: none; /* No border */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.btn:hover {
+  background-color: var(--gray-color-900); /* Light grey on hover */
+}
+
+.btn:active {
+  background-color: #e6e6ff; /* Active button background color */
+  position: relative; /* Required for the checkmark */
+}
+
+.btn--pause {
+  border-left: 2px solid #4b5563;
+  border-right: 2px solid #4b5563;
+}
+.add-task-btn,
+.delete-task-btn {
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  background-color: var(--gray-color-800);
+  color: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.add-task-btn:hover {
+  background-color: var(--gray-color-900);
+}
+.delete-task-btn:hover {
+  background-color: var(--red-color-500);
+}
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+.custom-progress {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+}
+
+.custom-progress .CircularProgressbar-path {
+  stroke: #f54e42; /* Color for the progress path */
+  stroke-width: 2; /* Thickness of the progress path */
+  transition: stroke-dashoffset 0.5s ease 0s; /* Animation for the progress */
+}
+
+.custom-progress .CircularProgressbar-trail {
+  stroke: #d6d6d6; /* Color for the trail */
+  stroke-width: 2; /* Thickness of the trail */
+}
+
+.custom-progress .CircularProgressbar-text {
+  fill: #f88; /* Text color */
+  font-size: 16px; /* Adjust text size */
+}
+
+.body-text {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+
+/* task list */
+
+ul {
+  width: 100%;
+  padding: 0;
+}
+
+.task-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-checkbox {
+  padding: 0;
+  margin: 0;
+}
+.added-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-text {
+  text-wrap: nowrap;
+}
+
+.task-input {
+  width: 100%;
+  border-radius: 8px;
+}
+.new-task {
+  display: flex;
+  flex-direction: column;
+}
