@@ -61,7 +61,9 @@ Each project folder contains a README.md file with more specific setup instructi
 
 ## Goals and Learning Path
 
-This repository is a structured collection of projects aimed at helping us master React through hands-on practice. The projects are designed to build on each other, progressing from simple concepts to more advanced techniques. By working through these projects, I aim to strengthen my understanding of React fundamentals, hooks, component design, and complex state management, ultimately preparing me to build complete, production-ready React applications.
+This repository is a curated collection of projects designed to progressively build expertise in React through hands-on practice. The projects are structured to reinforce core concepts and introduce advanced techniques, covering everything from foundational topics to complex features. By working through these projects, I am actively enhancing my React skills, including component design, state management, and hook usage, with the ultimate goal of building production-ready applications.
+
+Each project demonstrates my commitment to mastering React and developing real-world, practical knowledge that prepares me to create efficient, maintainable applications.
 
 ## Contributing
 
